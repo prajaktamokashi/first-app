@@ -7,7 +7,7 @@ const Table = () => {
   const data = [
     { id: 1, name: 'Trisandhya', age: 22 },
     { id: 2, name: 'Srushti', age: 20 },
-    { id: 3, name: 'Akash', age: 23 }
+    { id: 3, name: 'Akash', age: 24 }
   ];
 
   return (
@@ -32,4 +32,4 @@ const Table = () => {
   );
 };
 
-export default Table
+export default Table;
