@@ -8,6 +8,8 @@ import FavoriteColor from './Components/Usestatedemo';
 import Timer from './Components/Useeffectdemo';
 import Component1 from './Components/Usecontextdemo';
 import Reff from './Userefdemo';
+import Todos from './Components/Usereducerdemo';
+import Callback from './Components/Usecallbackdemo';
 function App() {
   return (
     <>
@@ -18,7 +20,9 @@ function App() {
    <FavoriteColor/>,
    <Timer/>,
    <Component1/>,
-   <Reff/>
+   <Reff/>,
+   <Todos/>,
+   <Callback/>
    </>
   );
 }
