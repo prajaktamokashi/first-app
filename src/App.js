@@ -1,18 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-import Properties from './Properties.js';
-import Table from './Table.js';
-import Counter from './counter.js';
-import Header from './Constructordemo.js';
 
+import './App.css';
+import Properties from './Components/Properties';
+import Table from './Components/Table';
+import Count1 from "./Components/Counter";
+import Header from "./Components/Const";
+import FavoriteColor from './Components/Usestatedemo';
+import Timer from './Components/Useeffectdemo';
+import Component1 from './Components/Usecontextdemo';
+import Reff from './Userefdemo';
 function App() {
   return (
-    <div>
-    <Properties name="Prajakta!"/>,
+    <>
+    <Header/>,
+    <Count1/>,
     <Table/>,
-    <Counter/>,
-    <Header/>
-    </div>
+    <Properties name="Prajakta!!"/>,
+   <FavoriteColor/>,
+   <Timer/>,
+   <Component1/>,
+   <Reff/>
+   </>
   );
 }
 export default App;
