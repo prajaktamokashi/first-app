@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                background-color: azure;
+                color: black;
+            }
+            h2{
+                font-size: 40px;
+                color: rgb(23, 23, 66);
+            }
+            
+        </style>
+        </head>
+<body>
+
+<h2>The XMLHttpRequest Object</h2>
+<p>The getAllResponseHeaders() </p>
+
+<p id="demo"></p>
+
+<script>
+const xhttp = new XMLHttpRequest();
+xhttp.onload = function() {
+  document.getElementById("demo").innerHTML =
+  this.getAllResponseHeaders();
+}
+xhttp.open("POST", "ajax_info.html",true);
+xhttp.send();
+</script>
+
+</body>
+</html>

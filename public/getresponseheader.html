@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                background-color: azure;
+                color: black;
+                font-size: 20px;
+            }
+            h2{
+                font-size: 40px;
+                color: rgb(23, 23, 66);
+            }
+            
+        </style>
+        </head>
+<body>
+    <h2>The XMLHttpRequest Object</h2>
+<p>Last modified: <span id="demo"></span></p>
+
+<script>
+const xhttp=new XMLHttpRequest();
+xhttp.onload = function() {
+  document.getElementById("demo").innerHTML =
+  this.getResponseHeader("Last-Modified");
+}
+xhttp.open("GET", "ajax_info.html");
+xhttp.send();
+</script>
+
+</body>
+</html>
