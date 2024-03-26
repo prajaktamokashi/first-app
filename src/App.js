@@ -1,6 +1,7 @@
 
 import './App.css';
-import Promises from './Components/Promises';
+import Garage from './Components/Garage';
+//import Promises from './Components/Promises';
 //import Properties from './Components/Properties';
 //import Table from './Components/Table';
 //import Count1 from "./Components/Counter";
@@ -11,11 +12,19 @@ import Promises from './Components/Promises';
 //import Reff from './Userefdemo';
 //import Todos from './Components/Usereducerdemo';
 //import Callback from './Components/Usecallbackdemo';
+//import Httpmethods from './Components/Httpmethods';
+import Login from './Components/Ifelsedemo';
+import Listkey from './Components/Listkey';
 function App() {
   return (
-    <>
-<Promises/>
-   </>
+    <div>
+
+   <Login/>
+   <hr/>
+   <Garage/>
+   <hr/>
+   <Listkey/>
+   </div>
   );
 }
 export default App;
