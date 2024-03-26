@@ -1,0 +1,38 @@
+<!--<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                background-color: azure;
+                color: black;
+            }
+            h2{
+                font-size: 40px;
+                color: rgb(23, 23, 66);
+            }
+            button{
+                background-color: aquamarine;
+                color: black;
+                height: 40px;
+                width: 150px;
+            }
+        </style>
+        </head>
+  <body>
+    <div id="demo">
+      <h2>The XMLHttpRequest Object</h2>
+      <button type="button" onclick="loadDoc()">Change Content</button>
+    </div>
+
+    <script>
+      function loadDoc() {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function () {
+          document.getElementById("demo").innerHTML = this.responseText;
+        };
+        xhttp.open("GET", "ajax_info.html", true);
+        xhttp.send();
+      }
+    </script>
+  </body>
+</html>
