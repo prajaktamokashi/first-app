@@ -1,0 +1,35 @@
+// Lipstick.js
+import React from 'react';
+//import lipstickImage from '../images/lipstick.jpg';
+
+/*function Lipstick() {
+  return (
+    <div>
+      <h2>Lipstick</h2>
+      <img src="https://www.bing.com/images/search?view=detailV2&ccid=xe5KOmUc&id=D6716FB4CD746FD4AB4D1D84F1CFE0BB9F8DC51B&thid=OIP.xe5KOmUcCv10lu34pril7wHaE8&mediaurl=https%3a%2f%2fi2.wp.com%2ftwindly.com%2fblog%2fwp-content%2fuploads%2f2017%2f05%2fred-lipstick-for-your-skintone.jpg&exph=2362&expw=3543&q=lipstick+image&simid=608017771799188455&FORM=IRPRST&ck=18CF01BCFA6D753BF5823B13D03FE4A9&selectedIndex=7&itb=0" alt="lipstick" />
+    </div>
+  );
+}*/
+const divStyle = {
+  display:'flex',
+};
+const Lipstick = () => {
+  const lipstick= [
+    "https://th.bing.com/th?id=OIP.Z3CYfxSbDVPiHSu4jITPZgHaLH&w=204&h=306&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "https://th.bing.com/th?id=OIP.oDMHg30hf594JYdO_Cw6aAHaOX&w=179&h=348&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "data:image/jpeg;base64,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",
+    "https://th.bing.com/th?id=OIP.CaDYO5azGRM4JkIts58UqgHaHE&w=255&h=244&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    "https://th.bing.com/th?id=OIP.T7W6uRzIk36xt0tq4iksjwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+  ];
+
+  return (
+    <div className="lipstick-list" style={divStyle}>
+      {lipstick.map((lipstick, index) => (
+        <img key={index} src={lipstick} alt={`Lipstick ${index + 1}`} />
+      ))}
+    </div>
+  );
+}
+
+
+export default Lipstick;
