@@ -1,10 +1,11 @@
 import React from 'react';
+import styles from './my-style.module.css'; 
 
 function ContactUs() {
   return (
-    <main className="contact-us">
+    <main className={styles.contact}>
       <h1>Contact Us</h1>
-      <div className="contact-info">
+      <div className={styles.info}>
         <p><strong>Address:</strong>At post Babhaleshwar,vasudevnagar,zipcode:413737</p>
         <p><strong>Phone:</strong> 9623147542</p>
         <p><strong>Email:</strong> prajaktamokashi1409@gmail.com</p>

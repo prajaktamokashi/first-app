@@ -1,0 +1,16 @@
+.about-us
+{
+    background-color:#eef2e2;
+}
+.about-paragraphs
+{
+    margin: 20px auto;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    line-height: 200%;
+}
+h1{
+    font-size:40px;
+    color: #263849;
+    font-weight: 700;
+}
