@@ -2,8 +2,8 @@ import React from 'react';
 
 function Home() {
   const imageStyle = {
-    width: '1000px', 
-    height: '500px', 
+    width: '100px', 
+    height: '300px', 
   };
 
   return (

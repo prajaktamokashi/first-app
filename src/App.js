@@ -30,7 +30,7 @@ function App() {
    </div>
   );
 }
-export default App;*/
+export default App;
 // App.js
 import "./App.css";
 import React from "react";
@@ -59,4 +59,75 @@ const App = () => {
   );
 };
 
+export default App;*/
+import React from 'react';
+import { Route, BrowserRouter, Routes } from "react-router-dom";
+import Header from './Components/Header';
+import Home3 from './Components/Home3';
+import AboutUs from './Components/AboutUs';
+import ContactUs from './Components/ContactUs';
+import Footer from './Components/Footer';
+import  BookList from './Components/BookList';
+import Booktwo from './Components/Booktwo';
+import Bookone from './Components/Bookone';
+
+function App() {
+
+  return (
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route exact path="/" element={<Home3/>} />
+        <Route exact path="/about-us" element={<AboutUs/>} />
+        <Route exact path="/contact-us" element={<ContactUs/>} />
+        <Route exact path="/book" element={<BookList/>} />
+          <Route path="/book/:id" element={<Bookone/>} />
+          <Route path="/book/:id" element={<Booktwo/>} />
+
+        </Routes>
+      <Footer />
+      </BrowserRouter>
+  );
+}
+
 export default App;
+
+/*import React, { useEffect, useState } from "react";
+import Users from "./Components/Users";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import UserDetails from "./Components/UserDetails";
+export default function App() {
+  const [users, setUsers] = useState([]);
+  const [activeUser, setActiveUser] = useState({});
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/users")
+     .then((response) => response.json())
+     .then((json) => {
+        setUsers(json);
+        setActiveUser(json?.[0]);
+      });
+  }, []);
+  return (
+    <div
+      style={{
+        display: "flex",
+        background: "#2F363F",
+        color: "#53E0BC",
+        width: "100%",
+        height: "100vh",
+        padding: "16px",
+      }}
+    >
+      <Router>
+        <Routes>
+          <Route path="/" element={<Users users={users} activeUser={activeUser} setActiveUser={setActiveUser} />
+            }
+          />
+          <Route path="/:userId" element={<UserDetails users={users} activeUser={activeUser} setActiveUser={setActiveUser} />
+            }
+          />
+        </Routes>
+      </Router>
+    </div>
+  );
+}*/
